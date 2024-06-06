@@ -27,6 +27,7 @@ yarn-error.log*
 # local env files
 .env
 .env.local
+.env.local.example
 .env.development
 .env.development.local
 .env.test.local
@@ -46,4 +47,6 @@ next-env.d.ts
 # Sanity CMS
 /.sanity
 /dist
+
+# Vercel
 .vercel
