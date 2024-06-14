@@ -1,9 +1,17 @@
-import HomePage from "./home";
+import Home from "@/app/(website)/home";
 import { getAllPosts } from "@/lib/sanity/client";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-export default async function IndexPage() {
-  const posts = await getAllPosts();
-  return <HomePage posts={posts} />;
+export default function IndexPage({ posts }) {
+  return <Home posts={posts} />;
 }
 
-// export const revalidate = 60;
+export async function getStaticProps({ locale }) {
+  const posts = await getAllPosts();
+  return {
+    props: {
+      posts,
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
+}
