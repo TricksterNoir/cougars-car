@@ -1,6 +1,8 @@
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 import {useTranslation } from 'next-i18next'
 import {useRouter} from 'next/router'
+import Menu from '../components/menu'
+import Image from "next/image"
 
 export default function Home() {
   const {t,i18n} = useTranslation()
@@ -9,13 +11,29 @@ export default function Home() {
   const handleChange = (locale) =>{
     router.push(router.pathname, router.asPath, {locale})
   }
+
+  const buttonStyle = "content-font button-main px-10 py-1.5 rounded hover:bg-gray-200 hover:text-black"
+
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24`}
+      className={`flex min-h-screen flex-col items-center justify-between`}
     >
-    <h1 className='text-red-500 text04xl'>{t('hello')}</h1>
-    <button onClick ={()=> handleChange('en')}>Change</button>
-    <button onClick ={()=> handleChange('pt')}>Mudar</button>
+    <div className='relative w-screen h-screen overflow-hidden bg-blue-200 fixed'>
+      <Menu/>
+    <h1 className='content top-[15%]'>TOYOTA - SUPRA</h1>
+        <div className = "z-1">
+          <Image src="/images/supra.jpg"
+              layout = "fill" 
+              objectFit = 'cover'
+              alt = "Toyota - Supra"
+              className='darkImage'
+            />
+          </div>
+          <div className='absolute inset-0 flex justify-center items-end bg-opacity-40 g-black text-white z-1 gap-2.5 mb-20'>
+            <button className={buttonStyle}>{t('bt-1')}</button>
+            <button className={buttonStyle}>{t('bt-2')}</button>
+          </div>
+    </div>
     </main>
   );
 }
