@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -30,4 +31,59 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.imageContainer{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.darkImage{
+  filter: brightness(40%);
+}
+
+.content{
+  position: relative;
+  z-index: 1;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1, li {
+  font-family: 'Russo One';
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-menu{
+  position: relative;
+  color: white;
+  text-align: center;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.button-main{
+  position: relative;
+  color: white;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-div{
+  top: 150px;
+}
+
+.content-font{
+  font-family: 'Russo One';
+  font-weight: 400;
+  font-style: normal;
 }
