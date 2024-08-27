@@ -4,6 +4,10 @@ import { useTranslation } from 'next-i18next';
 
 const styleMenu = "content-center text-xl hover:text-gray-400 cursor-pointer"
 
+const handleNavigation = (path) => {
+    router.push(path);
+  };
+
 const Menu = () =>{
     const { t } = useTranslation();
     return(
@@ -22,7 +26,11 @@ const Menu = () =>{
                     </div>
                     <div className='ml-auto flex space-x-4 pr-5'>
                         <li className={styleMenu}>{t("mn-1")}</li>
-                        <li className={styleMenu}>{t("mn-2")}</li>
+                        <li className={styleMenu}>
+                        <Link href="/contact/contact" passHref>
+                            {t("mn-2")}
+                        </Link>
+                        </li>
                         <li className={styleMenu}>{t("mn-3")}</li>
                     </div>
                 </ul>
