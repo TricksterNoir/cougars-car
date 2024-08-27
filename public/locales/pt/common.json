@@ -3,5 +3,15 @@
     "bt-2": "COMPRAR",
     "mn-1": "PRODUTOS",
     "mn-2": "CONTATO",
-    "mn-3": "SOBRE"
+    "mn-3": "SOBRE",
+    "ctt_msg": "ESTAMOS AQUI PARA LHE AJUDAR! ENTRE EM CONTATO CONOSCO AGORA MESMO, BASTA COMPLETAR O REGISTRO AO LADO QUE ENTRAREMOS EM CONTATO O MAIS RÁPIDO POSSIVEL! TENHA UM EXCELENTE DIA!",
+    "ctt": "CONTATO",
+    "ctt_btn": "ENVIAR",
+    "n_name": "NOME",
+    "h_name": "JOSÉ DA SILVA",
+    "n_phone": "TELEFONE",
+    "h_phone": "(55)99 9 9999-9999",
+    "n_msg": "MENSAGEM",
+    "h_msg": "DIGITE AQUI SUA MENSAGEM",
+    "email": "exemplo@exemplo.com"
 }

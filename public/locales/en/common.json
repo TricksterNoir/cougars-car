@@ -3,5 +3,15 @@
     "bt-2": "BUY NOW",
     "mn-1": "PRODUCTS",
     "mn-2": "CONTACT",
-    "mn-3": "ABOUT"
+    "mn-3": "ABOUT",
+    "ctt_msg": "WE ARE HERE TO HELP YOU! YOU CAN CONTACT US BY FILLING THE FORM AND WE WILL BE GETTING IN TOUCH AS SOON AS WE CAN. HAVE A NICE DAY! ",
+    "ctt": "CONTACT",
+    "ctt_btn": "SEND",
+    "n_name": "NAME",
+    "h_name": "JOHN DOE",
+    "n_phone": "PHONE",
+    "h_phone": "(111) 555 5555",
+    "n_msg": "MESSAGE",
+    "h_msg": "TYPE HERE",
+    "email": "example@example.com"
 }
