@@ -31,7 +31,10 @@ const Menu = () =>{
                             {t("mn-2")}
                         </Link>
                         </li>
-                        <li className={styleMenu}>{t("mn-3")}</li>
+                        <li className={styleMenu}>
+                        <Link href="/about/about" passHref>
+                            {t("mn-3")}
+                        </Link></li>
                     </div>
                 </ul>
             </div>
