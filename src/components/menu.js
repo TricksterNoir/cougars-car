@@ -14,7 +14,7 @@ const Menu = () =>{
         <nav className='w-full fixed top-5 flex justify-between z-10 px-4'>
             <div className='flex-1'>
                 <ul className='flex justify-between items-center'>
-                    <li className='content-center text-xl hover:text-gray-400 cursor-pointer pl-5 '>Cougar's Car</li>
+                    <li className='content-center text-xl hover:text-gray-400 cursor-pointer pl-5 '>{t('site_name')}</li>
                     <div className='absolute left-1/2 transform -translate-x-1/2'>
                         <Image 
                         src="/images/logo_white.png"
