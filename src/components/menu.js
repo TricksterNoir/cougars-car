@@ -25,7 +25,11 @@ const Menu = () =>{
                         />
                     </div>
                     <div className='ml-auto flex space-x-4 pr-5'>
-                        <li className={styleMenu}>{t("mn-1")}</li>
+                        <li className={styleMenu}>
+                        <Link href="/products/products" passHref>
+                            {t("mn-1")}
+                        </Link>
+                        </li>
                         <li className={styleMenu}>
                         <Link href="/contact/contact" passHref>
                             {t("mn-2")}
