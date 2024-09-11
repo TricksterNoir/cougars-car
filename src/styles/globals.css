@@ -65,6 +65,13 @@ h2 {
   font-size: 27px;
 }
 
+h3{
+  font-family: "Russo One";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
 .nav-menu{
   position: relative;
   color: white;
@@ -87,4 +94,21 @@ h2 {
 
 .main-div{
   top: 150px;
+}
+
+.product_hover{
+  transition: transform 0.3s ease;
+}
+
+.product-hover:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  color: #d4af37;
+}
+
+.product-text{
+  transform: 0.3s ease;
+  color: #000;
+  width: 100vw;
+  text-align: center;
 }
