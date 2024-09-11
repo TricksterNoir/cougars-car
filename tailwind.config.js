@@ -16,7 +16,8 @@ module.exports = {
         blackBg: "#0B0807",
         brownBg: "#5B5555",
         ctt_btn_Bg: "#3F3431",
-        cttBg: "#5F6862"
+        cttBg: "#5F6862",
+        prodBg: "#f7f7f2 ",
       },
       fontSize:{
         'h1': '42px',
