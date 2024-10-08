@@ -3,6 +3,7 @@ import {useTranslation } from 'next-i18next'
 import {useRouter} from 'next/router'
 import Menu from '../components/menu'
 import Image from "next/image"
+import Link from 'next/link';
 
 export default function Home() {
   const {t,i18n} = useTranslation()
@@ -30,7 +31,7 @@ export default function Home() {
             />
           </div>
           <div className='absolute inset-0 flex justify-center items-end bg-opacity-40 g-black text-white z-1 gap-2.5 mb-20'>
-            <button className={buttonStyle}>{t('bt-1')}</button>
+            <button className={buttonStyle}><Link href="/product/product" passHref> {t('bt-1')}</Link></button>
             <button className={buttonStyle}>{t('bt-2')}</button>
           </div>
     </div>
