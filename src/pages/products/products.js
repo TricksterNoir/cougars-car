@@ -2,7 +2,6 @@ import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 import {useTranslation } from 'next-i18next'
 import {useRouter} from 'next/router'
 import Menu from '../../components/menu'
-import Form from '../../components/contact_form'
 import Image from "next/image"
 
 export default function Contact() {
